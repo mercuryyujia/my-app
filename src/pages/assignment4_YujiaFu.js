@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import * as d3 from 'd3';
-import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import ScatterPlot from '../components/scatterPlot';
 import BarChart from '../components/barChart';
