@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 function YAxis(props){
-    const { yScale, height, axisLable } = props;
+    const { yScale, height, axisLabel } = props;
     const yAxisRef = useRef();
     useEffect(() => {
         if(yScale){

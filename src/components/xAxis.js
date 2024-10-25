@@ -18,7 +18,7 @@ import * as d3 from 'd3';
 
 
 function XAxis(props){
-    const { xScale, height, width, axisLable } = props;
+    const { xScale, height, width, axisLabel } = props;
     //Note:
     //1. XAxis works for two cases: the xScale is linear (i.e., scatter plot) and the xScalse is discrete (i.e., bar chart)
     //2. you can use typeof(xScale.domain()[0]) to decide the return value
