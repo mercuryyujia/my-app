@@ -9,9 +9,12 @@ import Tooltip from './components/tooltips';
 
 const csvUrl = 'https://gist.githubusercontent.com/hogwild/3b9aa737bde61dcb4dfa60cde8046e04/raw/citibike2020.csv'
 
-function useData(csvPath){
+function useData(csvPath) {
     const [dataAll, setData] = React.useState(null);
-    React.useEffect(()=>{
+
+    React.useEffect(() => {
+        if (!csvPath) return; // Early exit if csvPath is not provided
+
         d3.csv(csvPath).then(data => {
             data.forEach(d => {
                 d.start = +d.start;
@@ -21,10 +24,10 @@ function useData(csvPath){
             });
             setData(data);
         });
-    }, []);
+    }, [csvPath]); // Include csvPath as a dependency
+
     return dataAll;
 }
-
 const Charts = () => {
     const [month, setMonth] = React.useState('4');
     
