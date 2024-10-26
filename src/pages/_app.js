@@ -1,15 +1,8 @@
 import "@/styles/globals.css";
 import React from 'react';
-// Import the ErrorBoundary component
-import ErrorBoundary from './components/ErrorBoundary'
- 
+
 function MyApp({ Component, pageProps }) {
-  return (
-    // Wrap the Component prop with ErrorBoundary component
-    <ErrorBoundary>
-      <Component {...pageProps} />
-    </ErrorBoundary>
-  )
+  return <Component {...pageProps} />;
 }
- 
-export default  MyApp
+
+export default MyApp;
