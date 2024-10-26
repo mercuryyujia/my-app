@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 // Import the ErrorBoundary component
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './components/ErrorBoundary'
  
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,8 +11,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
  
-export default MyApp
-
-//export default function App({ Component, pageProps }) {
-//  return <Component {...pageProps} />;
-//}
+export default  MyApp

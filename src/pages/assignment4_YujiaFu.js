@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import * as d3 from 'd3';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import ScatterPlot from '../components/scatterPlot';
-import BarChart from '../components/barChart';
-import Tooltip from '../components/tooltips';
+import ScatterPlot from './components/scatterPlot';
+import BarChart from './components/barChart';
+import Tooltip from './components/tooltips';
 
 const csvUrl = 'https://gist.githubusercontent.com/hogwild/3b9aa737bde61dcb4dfa60cde8046e04/raw/citibike2020.csv'
 
