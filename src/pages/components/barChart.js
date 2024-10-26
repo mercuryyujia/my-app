@@ -9,8 +9,8 @@ function BarChart(props){
     //task2: import the components needed and uncomment the components in the return 
     return <g transform = {`translate(${offsetX}, ${offsetY})`}>
         <Bars data={data} xScale={xScale} yScale={yScale} height={height} selectedStation = {selectedStation} setSelectedStation = {setSelectedStation}/>
-        <YAxis xScale={xScale} yScale={yScale} width={width} axisLabel={"Bikers start from"}/>
-        <XAxis xScale={xScale} height={height} width={width} axisLabel={"End in"}/>
+        <YAxis xScale={xScale} yScale={yScale} width={width} axisLabel="Bikers start from"/>
+        <XAxis xScale={xScale} height={height} width={width} axisLabel="End in"/>
         </g>
 }
 
